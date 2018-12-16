@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 html,body {
     height: 100%;
     width: 100%;
@@ -18,35 +19,49 @@ html,body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+    .wrap .btnNewGame{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        height: 6vmin;
+        width: 25vmin;
+        font-size: 4vmin;
+        color: white;
+        background: transparent;
+        border: 0.3vmin solid red;
+        border-radius: 10px;
+    }
+    
     .wrap .nav{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         background-color: transparent;;
-        height: 15vmin;
-        width: 80vmin;
-        font-size: 8vmin;
+        height: 9vmin;
+        width: 100vmin;
+        font-size: 5.5vmin;
         color: white;
-        
     }
+        
         .wrap .nav .x{
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
             height: 15vmin;
             width: 33%;
             background-color: transparent;
+            box-sizing: border-box;
         }
         
         .wrap .nav .o{
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: center;
             height: 15vmin;
             width: 33%;
             background-color: transparent;
-            
         }
         
         .wrap .nav .reset{
@@ -60,7 +75,6 @@ html,body {
             background: transparent;
             border: 0.3vmin solid red;
             border-radius: 10px;
-
         }
         
         .wrap .nav .reset:hover{
@@ -74,14 +88,21 @@ html,body {
         flex-wrap: wrap;
         height: 80vmin;
         width: 80vmin;
-        background-color: aqua;
-
+        border-radius: 7px;
+        background: rgba(63,64 ,60 , 0.6);  
+        box-shadow: 5px 5px 10px 10px rgba(63,64 ,60 , 0.6)
     }
 
-    .wrap .field .cell{
-        height: 24vmin;
-        width: 24vmin;
-        margin: 1.2vmin;
-        border: 1px solid red;
-        box-sizing: border-box;
-    }
+        .wrap .field .cell{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 24vmin;
+            width: 24vmin;
+            margin: 1.2vmin;
+            border: 1px solid rgba(110, 222, 255, 0.9);
+            box-sizing: border-box;
+            font-size: 23vmin;
+            color: white;
+            cursor: pointer;
+        }
