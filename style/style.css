@@ -106,3 +106,48 @@ html,body {
             color: white;
             cursor: pointer;
         }
+
+
+
+
+.back{
+    height: 100%;
+    width: 100%;
+    background: url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+    .back .chooseForm{
+        height: 30vmin;
+        width: 60vmin;
+        position: relative;
+        top: 20%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center
+    }
+
+    .back .chooseForm .btn{
+        height: 12vmin;
+        width: 25vmin;
+        color: white;
+        font-size: 3.4vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:  rgba(63,64 ,60 , 0.8);  
+        border-radius: 60px;
+        
+
+
+    }
+    .back .chooseForm .btn:hover{
+        background:  rgba(3,64 ,60 , 0.8);
+        cursor: pointer;
+    }
+
+
